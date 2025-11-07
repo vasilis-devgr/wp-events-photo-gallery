@@ -1,0 +1,1155 @@
+/* public-style.css */
+
+.epa-album-grid,
+.epa-collections-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.epa-collection-item {
+    width: calc(20% - 16px);
+    padding: 10px;
+    box-sizing: border-box;
+}
+.epa-album-item {
+    width: calc(50% - 10px);
+    padding: 15px 12px;
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+}
+
+.epa-album-item a {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    gap:20px;
+}
+.epa-album-item a h3 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    font-weight:500;
+}
+
+.epa-album-item a .epa-myphotos-content{
+    width:calc(80% - 20px)
+}
+.epa-album-item img,
+.epa-collection-item img {
+    width: 100%;
+    height: auto;
+}
+
+.epa-wishlist-icon i {
+    font-size: 16px;
+    color: #000;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-item {
+    position: relative;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+.epa-photo-title h1 {
+    text-transform: capitalize !important;
+    font-weight: 800 !important;
+}
+.grid-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.grid-item h3 {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.wishlist-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Image Styling */
+/* .epa-wishlist-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+} */
+
+.epa-album-item img {
+    width: 20%;
+    border-radius:8px;
+}
+
+/* Remove Wishlist Icon */
+.epa-remove-wishlist-icon {
+    position: absolute;
+    right: 10px;
+    border-radius: 100%;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    bottom: 0;
+    color: #333;
+}
+
+.epa-remove-wishlist-icon i {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Wishlist Grid Container */
+.epa-wishlist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0px;
+    max-width: 1200px;
+}
+
+/* Wishlist Item */
+.epa-wishlist-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+}
+
+/* New CSS */
+/* .epa-photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    gap: 10px;
+    margin: 0 auto; 
+    padding: 0px; 
+    max-width: 1200px;
+} */
+.epa-photo-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.epa-photo-grid {
+    width: calc(25% - 8px);
+}
+
+.epa-photo-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.epa-photo-item {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    padding: 0px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    gap: 0px;
+    position:relative;
+}
+
+.epa-photo-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 0;
+}
+
+.epa-wishlist-icon {
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 30px 10px 5px;
+}
+
+.epa-wishlist-icon-already {
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    margin: 10px 5px;
+}
+.epa-wishlist-icon p {
+    cursor: pointer;
+    color: #000;
+    font-size: 16px;
+    margin-bottom: 0px;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+.epa-photo-grid .epa-photo-filename {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+    margin: 0px 5px 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.epa-photo-list-container .epa-photo-filename{
+   width: calc(100% - 148px);
+   font-size: 16px;
+   color: #333;
+   font-weight: 500;
+   margin-right: 5px;
+   margin-bottom: 5px;
+   margin-top: auto;
+   margin-left: auto !important;
+   display: -webkit-box;
+   -webkit-line-clamp: 1;
+   -webkit-box-orient: vertical;
+   overflow: hidden;
+   text-overflow: ellipsis;
+}
+.epa-photo-list-container  .epa-wishlist-icon{
+    width: calc(100% - 148px);
+    margin-bottom: auto;
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: auto !important;
+}
+.epa-wishlist-grid .epa-photo-filename {
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    padding: 20px 10px;
+
+}
+
+.epa-load-more,
+.epa-wishlist-load-more {
+    text-align: center !important;
+    margin: 0 auto !important;
+    display: block;
+    margin-top: 40px !important;
+    padding: 22px 90px !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    letter-spacing: 2px !important;
+}
+
+.epa-load-more:focus,
+.epa-wishlist-load-more:focus {
+    outline-color: transparent;
+}
+
+.swal2-container .swal2-icon.swal2-icon-show {
+    margin: 2.5em auto .6em !important;
+    border: 0.25em solid rgba(0, 0, 0, 0) !important;
+
+}
+
+.swal2-container .swal2-icon.swal2-error.swal2-icon-show {
+    border-color: #f27474 !important;
+    color: #f27474 !important;
+}
+
+.swal2-container .swal2-icon.swal2-warning.swal2-icon-show {
+    border-color: rgb(249.95234375, 205.965625, 167.74765625) !important;
+    color: #f8bb86 !important;
+}
+
+.swal2-container .swal2-close {
+    z-index: 2 !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 1.2em !important;
+    height: 1.2em !important;
+    margin-top: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: -1.2em !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    transition: color .1s, box-shadow .1s !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background: rgba(0, 0, 0, 0) !important;
+    color: #ccc !important;
+    font-family: monospace !important;
+    font-size: 2.5em !important;
+    cursor: pointer !important;
+    justify-self: end !important;
+}
+
+div:where(.swal2-container) button:where(.swal2-styled):where(.swal2-confirm):focus-visible {
+    box-shadow: none !important;
+}
+
+.epa-search-container {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+}
+
+.epa-search-box {
+    display: flex !important;
+    align-items: center !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+    overflow: hidden !important;
+    width: 350px !important;
+}
+
+.epa-search-box input {
+    border: none !important;
+    height: 50px !important;
+}
+
+.epa-search-box input::placeholder {
+    color: #333 !important;
+}
+
+.epa-search-button {
+    background-color: #000 !important;
+    border-radius: 4px !important;
+    min-height: 50px !important;
+}
+
+.epa-search-button i {
+    color: #fff !important;
+    font-size: 15px;
+}
+
+/* Popup start*/
+.epa-popup-container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background: rgba(0, 0, 0, 0.5) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s;
+    overflow: auto !important;
+    z-index: 9999;
+}
+.swal2-container{
+    padding: 15px !important;
+}
+.swal2-popup{
+    padding: 20px !important;
+    border-radius: 20px !important;
+}
+.swal2-popup .swal2-title{
+    padding: 0px !important;
+    margin-bottom: 20px !important;
+}
+.swal2-popup .swal2-input{
+    margin: 0px !important;
+    margin-bottom: 20px;
+    color: #000 !important;
+    font-size: 14px !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+}
+.epa-popup {
+    display: flex !important;
+    background: white !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2) !important;
+    width: 80% !important;
+    max-width: 900px !important;
+    min-height: 400px !important;
+    position: relative !important;
+    max-height: 90vh !important;
+}
+
+.epa-close-popup-btn {
+    position: absolute !important;
+    top: 10px !important;
+    right: 10px !important;
+    background: #000 !important;
+    color: white !important;
+    font-size: 20px !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 30px !important;
+    height: 30px !important;
+    cursor: pointer !important;
+    z-index: 2;
+}
+
+.epa-popup-left {
+    width: 50% !important;
+    background: #fff !important;
+    padding: 40px !important;
+    overflow: scroll; !important;
+}
+
+.epa-popup-left img {
+    object-fit: cover;
+    width: 100% !important;
+    max-width: 100% !important;
+    border-radius: 5px !important;
+    height: 320px !important;
+}
+
+.epa-popup-left .epa-image-name {
+    margin-top: 10px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+.epa-popup h2{
+    margin-top: 10px !important;
+    font-size: 22px !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+.epa-popup{
+    position: relative;
+}
+
+.epa-popup-right {
+    width: 50% !important;
+    padding: 40px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    position: relative;
+}
+.epa-popup::before{
+    content: '';
+    background-color: #d4d4d4;
+    width: 1px;
+    height: calc(100% - 80px);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.epa-popup-right h2 {
+    margin: 0 !important;
+    margin-bottom: 15px !important;
+    color: #000 !important;
+    font-weight: 500 !important;
+}
+
+.epa-popup-right h3 {
+    margin: 15px 0 10px !important;
+    font-size: 16px !important;
+    color: #555 !important;
+}
+
+.epa-new-collection {
+    display: flex !important;
+    align-items: center !important;
+    margin-bottom: 20px !important;
+}
+
+.epa-new-collection input {
+    flex: 1 !important;
+    padding: 10px !important;
+    border: 1px solid #000 !important;
+    border-radius: 5px !important;
+    margin-right: -10px !important;
+}
+
+.epa-add-collection-btn {
+    /*width: 30px !important;*/
+    height: 30px !important;
+    background: #000 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    font-size: 14px !important;
+}
+
+.epa-existing-collection .epa-search-bar {
+    display: flex !important;
+    align-items: center !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    padding: 5px 10px !important;
+    margin-bottom: 15px !important;
+}
+
+.epa-existing-collection .epa-search-bar input {
+    flex: 1 !important;
+    border: none !important;
+    outline: none !important;
+    padding: 5px !important;
+}
+
+
+.epa-existing-collection .epa-search-bar i {
+    color: #ccc !important;
+}
+
+.epa-collection-list {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    overflow-y: auto !important;
+    height: 140px !important;
+}
+
+.epa-popup-container .epa-collection-item {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    padding: 6px !important;
+    border: 1px solid #ccc !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    width: 100% !important;
+}
+
+.epa-collection-item.selected {
+    border-color: #a9a9a9 !important;
+    background: #f2f2f2 !important;
+}
+.epa-collection-item.selected::after {
+    content: "\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 600;
+    color: #00e200;
+    font-size: 20px;
+    margin-left: auto !important;
+}
+.epa-collection-item img {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 5px !important;
+}
+
+.epa-collection-item i {
+    margin-left: auto !important;
+    color: #5c49a5 !important;
+}
+
+.epa-popup-container .epa-save-btn {
+    margin-top: 20px !important;
+    padding: 10px !important;
+    background: #eaeaea !important;
+    border: none !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    color: #000 !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+}
+
+.epa-hidden {
+    display: none;
+}
+
+.epa-wishlist-item.selected {
+    border: 2px solid grey;
+}
+
+/* My Collection Tab Starts */
+.epa-photo-content {
+    margin-bottom: 20px;
+}
+
+.epa-photo-grid-container .epa-photo-item img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+}
+
+.epa-photo-load-more {
+    text-align: center;
+}
+
+.epa-list-view-button {
+    flex-direction: column;
+    background-color: transparent !important;
+    color: #727272 !important;
+}
+
+.epa-list-view-text {
+    text-transform: capitalize;
+}
+
+.epa-photo-list{
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 128px;
+}
+.epa-photo-list-container .epa-photo-item img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 128px;
+    height: 128px;
+    margin-bottom: 0px;
+}
+/* My Collection Tab Ends */
+/* My Photo Tab Starts */
+.epa-collection-album-grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.epa-collection-album-grid .epa-collection-album-item {
+    width: calc(50% - 10px);
+    padding: 15px 12px 25px 12px;
+    box-sizing: border-box;
+    border: 1px solid #bdbdbd;
+    border-radius: 8px;
+    position:relative;
+}
+.epa-collection-album-grid img {
+    width: 20%;
+    border-radius:8px;
+}
+.epa-collection-album-grid a h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight:500;
+}
+.epa-collection-album-grid .my-photos-action{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+    position:absolute;
+    right:20px;
+    bottom:8px;
+}
+.epa-collection-album-grid .my-photos-action i{
+    cursor: pointer;
+}
+.epa-collection-title h1{
+    font-weight:500;
+}
+
+.epa-search-box button{
+    background-color: #000 !important;
+    border-radius: 4px !important;
+    min-height: 50px !important;
+    margin-left: -5px !important;
+}
+.epa-search-box button i{
+    color: #fff !important;
+    font-size: 15px;
+}
+.epa-collection-album-item a{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    align-items:center;
+}
+.epa-collection-content{
+    margin-bottom:30px;
+}
+.epa-collection-album-item .epa-collection-content{
+    width:calc(80% - 20px);
+        margin-bottom:0px;
+}
+.epa-collection-album-grid .my-photos-action span{
+   display: inline-block;
+   cursor: pointer;
+   transition: all 0.3s ease-in-out;
+    color:#000;
+    font-size:12px;
+
+}
+.epa-collection-album-grid .my-photos-action i{
+    font-size:12px;
+    margin-right:6px;
+}
+
+.epa-wishlist-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.epa-wishlist-content .epa-wishlist-container{
+    width: calc(40% - 5px);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.epa-wishlist-content .epa-wishlist-container:last-child{
+        width: calc(60% - 5px);
+}
+.epa-wishlist-content .epa-wishlist-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+}
+
+.epa-wishlist-content .epa-wishlist-box input {
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    width: calc(100% - 50px);
+}
+.epa-wishlist-content .epa-wishlist-button {
+    background-color: #000 !important;
+    border-radius: 4px !important;
+    min-height: 50px !important;
+    margin-left: -5px !important;
+}
+.epa-wishlist-content .epa-wishlist-button i {
+    color: #fff !important;
+    font-size: 15px;
+}
+.epa-wishlist-content .epa-wishlist-list-view-button {
+    flex-direction: column;
+    background-color: transparent !important;
+    padding: 5px !important;
+    color: #727272 !important;
+}
+.epa-wishlist-content .epa-wishlist-products select, {
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="black" d="M5 7l5 5 5-5H5z"/%3E%3C/svg%3E');
+    outline: none !important;
+}
+.epa-myphotos-sort select{
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="black" d="M5 7l5 5 5-5H5z"/%3E%3C/svg%3E');
+    outline: none !important;
+    width: 190px;
+}
+.epa-search-container .epa-search-button-my-photos{
+    background-color: #000 !important;
+    border-radius: 4px !important;
+    min-height: 50px !important;
+    margin-left: -5px !important;
+}
+.epa-search-container .epa-search-button-my-photos i{
+    color: #fff !important;
+    font-size: 15px;
+}
+.epa-myphotos-content-button{
+    max-width:300px;
+    width:100%;
+}
+.epa-myphotos-button{
+    padding: 18px 25px 18px 25px !important;
+    font-weight: 700 !important;
+    color: #000 !important;
+    letter-spacing: 0.2px !important;
+    border-radius: 3px !important;
+    text-transform: math-auto !important;
+}
+.epa-wishlist-content .epa-wishlist-add-to-cart button{
+  background-color: #000 !important;
+  border-radius: 4px !important;
+  color: #fff !important;
+  min-height: 50px !important;
+  width: 100%;
+}
+.epa-wishlist-content .epa-wishlist-products{
+    width: calc(60% - 5px);
+}
+.epa-wishlist-content .epa-wishlist-add-to-cart{
+    width: calc(40% - 5px);
+}
+.epa-wishlist-photo-grid-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.epa-wishlist-photo-grid-container .epa-wishlist-grid{
+    width: calc(25% - 8px);
+    gap: 0px;
+    margin: 0px;
+}
+.epa-wishlist-photo-grid-container .epa-wishlist-grid img {
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    border-radius: 0;
+}
+.epa-wishlist-photo-grid-container .epa-wishlist-grid .epa-photo-filename {
+    font-size: 12px;
+    padding: 0px;
+    margin: 10px;
+    margin-bottom: 0px;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.epa-wishlist-photo-container .epa-remove-wishlist-icon{
+    position: static;
+    text-align: right;
+    padding-top: 0px;
+    font-size: 14px;
+}
+.epa-wishlist-photo-container .epa-remove-wishlist-icon i{
+    font-size: 14px;
+}
+.epa-wishlist-photo-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}
+.epa-wishlist-photo-list-container .epa-wishlist-list {
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 128px;
+}
+.epa-wishlist-photo-list-container .epa-wishlist-list img {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 128px;
+    height: 128px;
+    margin-bottom: 0px;
+    object-fit: cover;
+}
+.epa-wishlist-photo-list-container .epa-photo-filename {
+    width: calc(100% - 148px);
+    font-size: 12px;
+    font-weight: 500;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: auto;
+    margin-left: auto !important;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.epa-wishlist-photo-list-container  .epa-remove-wishlist-icon {
+    width: calc(100% - 148px);
+    margin-bottom: auto;
+    margin-top: 5px;
+    margin-right: 5px;
+    padding: 0px;
+    text-align: left;
+    margin-left: auto !important;
+}
+.epa-photo-item input{
+    position:absolute;
+    right:10px;
+    bottom:16px;
+    margin:0px;
+    width:16px;
+    height:16px;
+}
+.epa-photo-back{
+    margin-bottom:25px;
+}
+.epa-photo-back span{
+    font-weight:500;
+    text-decoration:underline;
+}
+.epa-wishlist-title h1{
+    font-weight:500;
+}
+.epa-wishlist-products select{
+    border: 1px solid #000 !important;
+    border-radius: 4px !important;
+    height: 50px !important;
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"%3E%3Cpath fill="black" d="M5 7l5 5 5-5H5z"/%3E%3C/svg%3E);
+    outline: none !important;
+}
+.epa-popup-thumbnails{
+    display: flex;
+    margin-top: 10px;
+    gap: 5px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.epa-popup-thumbnails  .thumbnail {
+    width: calc(20% - 4px);
+}
+.epa-popup-thumbnails .thumbnail img{
+    height: 60px !important;
+    width: 100% !important;
+    max-width: 65px !important;
+}
+.wd-my-account-links .my-collections-link a:before{
+    content: "\f134";
+    font-family: "woodmart-font";
+}
+.epa-lightbox{
+    display: none;
+}
+
+.wd-my-account-links .my-photos-link a {
+    text-decoration: none; 
+    font-size: 16px;
+}
+.wd-my-account-links .my-photos-link a:before {
+    content: ""; 
+    font-family: none; 
+    display: inline-block; 
+    width: 100%; 
+    height: 45px; 
+    background-image: url('https://mymory.cloudx.gr/wp-content/plugins/wp_events_photo_gallery/assets/my-photos.svg'); /* Replace with your SVG file path */
+    background-size: contain; 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.my-photos-link a {
+    display: block;
+    padding: 20px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--color-gray-700);
+    border-radius: var(--wd-brd-radius);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.18);
+}
+
+.bottom-actions {
+    display: flex;
+    justify-content: end;
+}
+
+p.epa-photo-filename {
+    text-transform: capitalize;
+}
+/* My Photo Tab Ends */
+
+@media screen and (max-width:1200px) {
+    .epa-photo-grid {
+        width: calc(33.33% - 7px);
+    }
+    .epa-wishlist-photo-grid-container .epa-wishlist-grid {
+        width: calc(33.33% - 7px);
+    }
+}
+
+@media screen and (max-width:1024px) {
+
+
+    .epa-collection-item {
+        width: calc(25% - 15px);
+    }
+
+    .epa-album-item a h3 {
+        font-size: 16px;
+    }
+
+    .epa-collection-album-grid a h3 {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .epa-photo-grid {
+        width: calc(50% - 5px);
+    }
+    .epa-wishlist-photo-grid-container .epa-wishlist-grid {
+        width: calc(50% - 5px);
+    }
+    .epa-collection-album-grid .epa-collection-album-item{
+        width: calc(33.33% - 14px);
+    }
+    .epa-wishlist-content {
+        gap: 10px;
+    }
+    .epa-wishlist-content .epa-wishlist-container {
+        width: 100%;
+    }
+        .epa-album-item{
+        width:100%;
+    }
+    .epa-search-container{
+        flex-wrap:wrap;
+    }
+    .epa-search-box{
+        width:100% !important;
+    }
+    .epa-myphotos-sort select{
+        width:100% !important;
+    }
+    .epa-myphotos-button{
+        width:100%;
+    }
+    .epa-myphotos-sort,.epa-myphotos-content-button{
+        width:calc(50% - 5px);
+        max-width:100%;
+    }
+    .epa-collection-album-grid .epa-collection-album-item{
+        width:100%;
+    }
+    .epa-wishlist-content .epa-wishlist-container:last-child{
+        width: 100%;
+}
+}
+
+@media screen and (max-width:768px) {
+
+    .epa-photo-grid {
+        width: calc(33.33% - 7px);
+    }
+    .epa-wishlist-photo-grid-container .epa-wishlist-grid {
+        width: calc(33.33% - 7px);
+    }
+    .epa-popup-left{
+        width: 100% !important;
+        position: relative;
+        padding: 20px !important;
+    }
+    .epa-popup-right{
+        width: 100% !important;
+        padding: 20px !important;
+    }
+    .epa-popup{
+        flex-wrap: wrap;
+        overflow-y: scroll !important;
+    }
+    .epa-popup::before{
+        display: none;
+    }
+    .epa-popup-left::before{
+        content: '';
+        background-color: #f5f5f5;
+        width: calc(100% - 40px);
+        height: 2px;
+        position: absolute;
+        left: 50%;
+        bottom: 1px;
+        transform: translateX(-50%);
+    }
+    .epa-popup-left .epa-image-name{
+        margin-bottom: 0px;
+    }
+    .epa-popup-left h2 {
+        padding-right: 40px;
+    }
+}
+
+@media screen and (max-width:767px) {
+
+
+    .epa-collection-item {
+        width: calc(33.33% - 14px);
+    }
+    .epa-album-item{
+        width:calc(50% - 10px);
+    }
+        .epa-collection-album-grid .epa-collection-album-item{
+        width:calc(50% - 10px);
+    }
+
+}
+
+@media screen and (max-width:576px) {
+    .epa-photo-grid {
+        width: calc(50% - 5px);
+    }
+    .epa-wishlist-photo-grid-container .epa-wishlist-grid {
+        width: calc(50% - 5px);
+    }
+    .epa-popup h2 {
+        font-size: 16px;
+    }
+    .epa-collection-item span{
+        font-size: 14px !important;
+    }
+    .epa-close-popup-btn{
+        min-height: 15px !important;
+        padding: 15px !important;
+        height: 15px !important;
+        width: 15px !important;
+    }
+    .epa-wishlist-content .epa-wishlist-container {
+        width: 100%;
+    }
+        .epa-album-item{
+        width:100%;
+        padding: 15px 12px;
+    }
+            .epa-collection-album-grid .epa-collection-album-item{
+        width:calc(50% - 10px);
+    }
+        .epa-collection-album-grid .epa-collection-album-item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+
+
+    .epa-collection-item {
+        width: calc(50% - 10px);
+    }
+
+    .epa-photo-grid {
+        width: 100%;
+    }
+    .epa-wishlist-photo-grid-container .epa-wishlist-grid {
+        width: 100%;
+    }
+    .epa-load-more,
+    .epa-wishlist-load-more {
+        padding: 15px 60px !important;
+        letter-spacing: 1.5px !important;
+    }
+        .epa-myphotos-sort,.epa-myphotos-content-button{
+        width:100%;
+
+    }
+    .epa-wishlist-content .epa-wishlist-products {
+    width:100%;
+}
+    .epa-wishlist-content .epa-wishlist-add-to-cart {
+    width:100%;
+}
+}

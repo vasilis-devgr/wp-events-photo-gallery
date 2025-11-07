@@ -1,0 +1,79 @@
+/* admin-style.css */
+
+.epa-album-list {
+    list-style: none;
+    padding: 0;
+}
+
+.epa-album-list li {
+    margin-bottom: 10px;
+}
+
+.epa-album-list a {
+    margin-left: 10px;
+}
+
+#epa-photo-modal,
+#epa-assign-albums-modal {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+#epa-photo-gallery .epa-photo-item {
+    display: inline-block;
+    position: relative;
+	width:calc(25% - 15px);
+	margin:0px;
+}
+
+#epa-photo-gallery .epa-delete-photo {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: red;
+    cursor: pointer;
+}
+
+#epa-photo-gallery {
+   display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+/*    justify-content: space-between;*/
+    margin-top: 20px;
+	gap:20px;
+}
+
+#epa-photo-gallery img {
+/*     width: 295px;
+    height: 250px; */
+	width:100%;
+	height:19vw;
+    object-fit: cover;
+}
+
+#album-checkboxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#album-checkboxes label{
+    padding: 10px 10px 10px 0px;
+}
+
+@media screen and (max-width:991px){
+	#epa-photo-gallery .epa-photo-item {
+	width:calc(33.33% - 14px);
+}
+#epa-photo-gallery img {
+	height:25vw;
+}
+}
+@media screen and (max-width:600px){
+	#epa-photo-gallery .epa-photo-item {
+	width:calc(50% - 10px);
+}
+#epa-photo-gallery img {
+	height:45vw;
+}
+}
