@@ -1,9 +1,7 @@
 # WP Events Photo Gallery
 A WooCommerce plugin for photographers. 
 
-===========================================
-DESCRIPTION
-==========================================
+# DESCRIPTION
 
 // Front-End
 
@@ -17,10 +15,7 @@ Finally, they can select an album and convert it into either a photo album or a 
 
 The administrator has the ability to create products that are Events Gallery type and give them the property of a mug, t-shirt, or album so that the user can choose what to match their photos with and purchase the product at WooCommerce checkout.
 
-
-===========================================
-INSTALLATION
-==========================================
+# INSTALLATION
 
 1. Install ACF Plugin.
 2. Upload the file in .zip file from back-end and activate it.
